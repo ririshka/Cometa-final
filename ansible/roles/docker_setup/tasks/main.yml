@@ -1,0 +1,20 @@
+---
+- name: Install Docker
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - docker.io
+    - docker-compose-plugin
+
+- name: Add user to Docker group
+  user:
+    name: "{{ ansible_user }}"
+    groups: docker
+    append: true
+
+- name: Ensure Docker service is running
+  service:
+    name: docker
+    state: started
+    enabled: true

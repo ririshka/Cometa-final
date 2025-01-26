@@ -1,0 +1,11 @@
+---
+- name: Copy docker-compose file to target server
+  copy:
+    src: files/docker-compose.yml
+    dest: /home/{{ ansible_user }}/docker-compose.yml
+
+- name: Start application with Docker Compose
+  shell: |
+    docker-compose up -d
+  args:
+    chdir: /home/{{ ansible_user }}

@@ -1,0 +1,8 @@
+---
+- name: Deploy Flask application
+  hosts: target_server
+  become: true
+
+  roles:
+    - docker_setup
+    - app_deploy

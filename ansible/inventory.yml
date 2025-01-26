@@ -1,0 +1,6 @@
+all:
+  hosts:
+    target_server:
+      ansible_host: 34.229.194.74
+      ansible_user: ubuntu
+      ansible_ssh_private_key_file: "{{ lookup('env', 'ANSIBLE_PRIVATE_KEY_FILE') }}"
