@@ -22,6 +22,7 @@ Cometa-final/
 │   └── Dockerfile
 ├── docker-compose.yml
 └── README.md
+```
 
 # Описание проекта
 
