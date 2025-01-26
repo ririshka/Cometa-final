@@ -32,7 +32,7 @@ jobs:
         chmod 400 ansible_key.pem
 
     - name: Run Ansible playbook
-      uses: stephane-klein/ansible-playbook-action@v1.2.0
+      uses: dawidd6/action-ansible-playbook@v2.4.1
       with:
         inventory: ansible/inventory.yml
         playbook: ansible/playbook.yml
