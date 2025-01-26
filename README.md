@@ -78,11 +78,11 @@ Cometa-final/
 
 ## Скриншоты
 
-### Основное изображение
+### docker ps
 ![docker ps](https://github.com/ririshka/Cometa-final/blob/main/image.png)
 
-### Дополнительное изображение 1
+### HTTP
 ![HTTP](https://github.com/ririshka/Cometa-final/blob/main/image2.png)
 
-### Дополнительное изображение 2
+### CICD
 ![CICD](https://github.com/ririshka/Cometa-final/blob/main/image3.png)
